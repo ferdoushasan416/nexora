@@ -1,37 +1,21 @@
 <?php
-/**
- * The template for displaying all pages
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package Nexora
- */
 
-get_header();
-?>
+// Template Name: Homepage
 
-	<main id="primary" class="site-main">
+ get_header(); while(have_posts()): the_post(); ?>
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
+	<?php if( have_rows('cms') ): ?>
+		<?php while ( have_rows('cms') ) : the_row();
 
-			get_template_part( 'template-parts/content', 'page' );
+			$layout = get_row_layout();
+			get_template_part('template-parts/sections/' . $layout);
+            
+		endwhile;
+	else:
+         get_template_part('template-parts/content-page');
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+ 	endif; ?>
 
-		endwhile; // End of the loop.
-		?>
+	
 
-	</main><!-- #main -->
-
-<?php
-get_footer();
+<?php get_footer(); endwhile; ?>

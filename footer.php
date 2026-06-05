@@ -13,7 +13,7 @@
 
 	<footer id="colophon" class="site-footer layout-padding">
 		<div class="footer-top pt-50 pb-40 pt-lg-80">
-			<div class="footer-top-inner layout-padding">
+			<div class="footer-top-inner">
 				<div class="footer-widget-box">
 					<div class="footer-logo">
 						<a href="<?php echo esc_url( home_url('/') ); ?>">
@@ -64,7 +64,7 @@
 			</div>
 		</div>
 		<div class="footer-bottom">
-			<div class="footer-bottom-inner pt-30 pb-40 pt-lg-80">
+			<div class="footer-bottom-inner pt-30 pb-40 pt-lg-50">
 				<div class="footer-copyright">
 					<p><?php the_field('footer_copyright', 'option'); ?></p>
 				</div>

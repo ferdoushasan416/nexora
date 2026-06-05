@@ -75,6 +75,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     color: var(--nexora-primary);
 }
 
+.get-started-btn .site-btn {
+	padding: .625rem 1.125rem;
+}
+
 @media only screen and (max-width: 991px) {
 
     /* Mobile Responsive Css */
@@ -178,6 +182,65 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 }
 
 /* Hamburger Menu Css End */
+
+
+
+
+.hero-section {
+	background: linear-gradient(90deg, #EEF2FF 0%, #FFFFFF 100%);
+}
+
+.hero-content {
+	max-width: 52.125rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.hero-badge span {
+  color: var(--nexora-blue);
+  background: rgba(238, 242, 255, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: .375rem .875rem .375rem 1.5rem;
+  border: 1px solid rgba(217, 222, 247, 1);
+  border-radius: 2.5rem;
+  line-height: 120%;
+  font-size: .875rem;
+  position: relative;
+}
+
+.hero-badge span:before {
+    position: absolute;
+    left: .625rem;
+    content: "";
+    width: .375rem;
+    height: .375rem;
+    background-color: var(--nexora-primary);
+    border-radius: 50%;
+}
+
+.hero-text {
+	margin-top: 1.875rem
+}
+
+.hero-description {
+	margin-top: 1.5rem;
+}
+
+.hero-btns {
+	margin-top: 1.875rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: .75rem;
+}
+.hero-bottom-text {
+  margin-top: 1.875rem;
+  font-size: .875rem;
+}
+
+
 
 
 .site-footer {

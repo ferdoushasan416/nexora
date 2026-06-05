@@ -28,7 +28,7 @@ html {
 }
 
 body {
-    color: var(--nexora-gray);
+    color: rgba(100, 116, 139, 1);
     background-color: var(--white);
     font-family: var(--font-body);
     font-size: 1rem;
@@ -495,7 +495,7 @@ h6,
 
 .site-btn {
     font-size: 1rem;
-    padding: 0.875rem 1.375rem;
+    padding: .875rem 1.375rem;
     font-weight: 700;
     text-align: center;
     line-height: 150%;
@@ -513,9 +513,9 @@ h6,
 }
 
 .btn-transparent {
-    background-color: transparent;
-    border: 2px solid var(--nexora-gray);
-    color: var(--nexora-primary);
+    background-color: var(--white);
+    border: 1px solid var(--nexora-gray);
+    color: var(--black2);
 }
 
 .btn-transparent:hover {
