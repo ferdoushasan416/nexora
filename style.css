@@ -243,6 +243,22 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 
 
+
+
+
+
+.team-logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 4rem;
+  margin-top: 1.25rem;
+}
+
+
+
+
+
 .site-footer {
     color: #8C99B2;
     background-color: var(--nexora-secondary);
