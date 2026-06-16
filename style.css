@@ -241,12 +241,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 }
 
 
-
-
-
-
-
-
 .team-logo-wrapper {
   display: flex;
   align-items: center;
@@ -254,7 +248,104 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   column-gap: 4rem;
   margin-top: 1.25rem;
 }
+@media only screen and (max-width: 991px) {
+.team-logo-wrapper {
+    flex-wrap: wrap;
+	row-gap: .625rem;
+    column-gap: 2rem;
+    align-items: center;
+}
+}
 
+
+
+
+.section-tagline span {
+  font-size: .6875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: .0825rem;
+  color: var(--nexora-blue);
+}
+
+.service-boxes {
+  display: grid;
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
+}
+.service-grid {
+  background-color: #F8FAFC;
+}
+
+.service-icon {
+  position: relative;
+}
+
+.service-box .service-icon:before {
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: .6875rem;
+  font-weight: 600;
+  padding: 0 .625rem;
+  border-radius: 3.125rem;
+}
+
+.service-box:nth-child(2) .service-icon::before {
+  content: "POPULAR";
+  color: #F59E0B;
+  background-color: #FEF2D5;
+}
+
+.service-box:nth-child(4) .service-icon::before {
+  content: "NEW";
+  color: #10B981;
+  padding: 0 1rem;
+  background-color: #D1FAE5;
+}
+
+.service-box {
+  background-color: var(--white);
+  padding: 2rem;
+  border: 1px solid #E2E8F0;
+  border-radius: 1rem;
+}
+
+.service-title {
+  font-size: 1.375rem;
+  margin-top: 1.25rem;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.11px;
+}
+.box-footer {
+  margin-top: 1.25rem;
+}
+
+.grid-column-1 {
+    grid-template-columns: 1fr;
+}
+
+.grid-column-2 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-column-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media only screen and (max-width:991px) {
+.grid-column-3 {
+	grid-template-columns: repeat(2, 1fr);
+}
+}
+@media only screen and (max-width: 767px) {
+.grid-column-3 {
+	grid-template-columns: 1fr;
+}
+}
 
 
 
