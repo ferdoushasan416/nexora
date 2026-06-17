@@ -22,7 +22,11 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
-
+/*
+=====================================
+ Header Style Start
+=====================================
+ */
 .header-inline {
     display: flex;
     align-items: center;
@@ -181,11 +185,19 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     }
 }
 
-/* Hamburger Menu Css End */
+/*
+=====================================
+ Header Style End
+=====================================
+ */
 
 
 
-
+/*
+=====================================
+ Hero Style Start
+=====================================
+ */
 .hero-section {
 	background: linear-gradient(90deg, #EEF2FF 0%, #FFFFFF 100%);
 }
@@ -256,10 +268,18 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     align-items: center;
 }
 }
+/*
+=====================================
+ Hero Style End
+=====================================
+ */
 
 
-
-
+/*
+=====================================
+ Service Style Start
+=====================================
+ */
 .section-tagline span {
   font-size: .6875rem;
   font-style: normal;
@@ -347,9 +367,143 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 }
 }
 
+/*
+=====================================
+ Service Style End
+=====================================
+ */
+
+.smart-media-grid {
+  display: grid;
+  grid-template-columns: 43.75rem 1fr;
+  align-items: center;
+  column-gap: 5rem;
+}
+
+.smart-section-content {
+  grid-area: content;
+}
+
+.smart-section-media {
+  grid-area: media;
+}
+
+.smart-media-grid.media-left {
+  grid-template-areas: "media content";
+}
+
+.smart-media-grid.media-right {
+  grid-template-areas: "content media";
+}
+
+.smart-section-content .site-btn {
+	margin-top: 2.5rem;
+	background-color: var(--ps-purple);
+	color: var(--ps-white);
+}
+
+.gallery-images {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.gallery-images.column-count-3 .gallery-image:last-child {
+ grid-column: span 2;
+}
+
+.single-image{
+	height: 31.25rem;
+}
+.single-image img{
+	width: 100%;
+    height: 100%;
+	border-radius: 1rem;
+}
+
+.smart-section-media video {
+	width: 100%;
+	height: 31.25rem;
+	border-radius: 1rem;
+}
+
+.smart-section-content h2 {
+  margin-top: 1.25rem;
+}
+.counter-boxes {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
+}
+.counter-box {
+  border-top: .125rem solid #E2E8F0;
+  padding-top: 1rem;
+}
+.counter-box h3 {
+  margin-bottom: .375rem;
+}
+.counter-box p {
+  font-size: .8125rem;
+  font-weight: 500;
+  line-height: normal;
+}
+.smart-content-list ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 1.25rem;
+  row-gap: 1rem;
+}
+.smart-content-list li {
+  color: var(--black2);
+  font-size: .9375rem;
+  font-weight: 500;
+  line-height: normal;
+  position: relative;
+  padding-left: 1.875rem;
+}
+.smart-content-list li:before {
+    position: absolute;
+    content: "";
+    width: 1.25rem;
+    height: 1.25rem;
+    left: 0;
+    top: 0;
+    background-image: url(assets/svgs/check.svg);
+    background-repeat: no-repeat;
+}
+@media only screen and (max-width: 1199px) {
+.smart-media-grid {
+  grid-template-columns: 1fr 1fr;
+}
+}
+
+@media only screen and (max-width: 991px) {
+.smart-media-grid {
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  column-gap: 3rem;
+}
+}
+@media only screen and (max-width: 767px) {
+.smart-media-grid {
+  grid-template-columns: 1fr;
+ 
+}
+}
 
 
 
+
+/*
+=====================================
+ Footer Style Start
+=====================================
+ */
 .site-footer {
     color: #8C99B2;
     background-color: var(--nexora-secondary);
@@ -491,3 +645,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     }
 
 }
+/*
+=====================================
+ Footer Style End
+=====================================
+ */
