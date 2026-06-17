@@ -9,6 +9,23 @@ jQuery(document).ready(function($){
     $('.hamburger-menu-wrapper').removeClass('isOpen');
   });
 // Mobile Menu Function End //
+
+
+// Button Toggle javascript //
+const buttons = document.querySelectorAll('.pricing__toggle-btn');
+
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+
+        // Remove active class from all buttons
+        buttons.forEach(btn => btn.classList.remove('is-active'));
+
+        // Add active class to clicked button
+        button.classList.add('is-active');
+    });
+});
+
+
   
 });   
 
